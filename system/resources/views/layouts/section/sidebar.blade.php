@@ -9,31 +9,31 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="#document" class="nav-link">
+            <a href="#tentang" class="nav-link">
                 <i class="fas fa-info"></i>
                 <span class="title">Tentang</span>
             </a>
         </li>
         <li class="nav-item">
-            <a href="#document" class="nav-link">
+            <a href="#fitur" class="nav-link">
                 <i class="fas fa-list"></i>
                 <span class="title">Fitur</span>
             </a>
         </li>
         <li class="nav-item">
-            <a href="#document" class="nav-link">
+            <a href="#portofolio" class="nav-link">
                 <i class="fas fa-image"></i>
                 <span class="title">Portofolio</span>
             </a>
         </li>
         <li class="nav-item">
-            <a href="#document" class="nav-link">
+            <a href="#blog" class="nav-link">
                 <i class="fas fa-clipboard"></i>
                 <span class="title">Blog</span>
             </a>
         </li>
         <li class="nav-item">
-            <a href="#document" class="nav-link">
+            <a href="#kontak" class="nav-link">
                 <i class="fas fa-user"></i>
                 <span class="title">Kontak</span>
             </a>

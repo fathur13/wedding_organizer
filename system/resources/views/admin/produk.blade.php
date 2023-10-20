@@ -7,7 +7,7 @@
                     <div class="col-xxl-12 col-lg-6 mb-25">
                         <div class="card p-0" style="margin-top: 2%">
                             <div class="card-header color-dark fw-500">
-                                Data User 
+                                Data User
                             </div>
                             <div class="card-body p-0" style="height: : 10 rem">
                                 <div class="table4 p-25 mb-30">
@@ -22,14 +22,14 @@
                                                         <span class="userDatatable-title">Nama</span>
                                                     </th>
                                                     <th>
-                                                        <span class="userDatatable-title">Email</span>
+                                                        <span class="userDatatable-title">Harga</span>
                                                     </th>
                                                     <th>
                                                         <span class="userDatatable-title">Aksi</span>
                                                     </th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            {{-- <tbody>
                                                 @php
                                                     $no = 1;
                                                 @endphp
@@ -47,15 +47,17 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <form action="{{ route('users.destroy', $user->id) }}" method="POST">
+                                                            <form action="{{ route('users.destroy', $user->id) }}"
+                                                                method="POST">
                                                                 @csrf
                                                                 @method('DELETE')
-                                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                                                <button type="submit"
+                                                                    class="btn btn-danger">Delete</button>
                                                             </form>
                                                         </td>
                                                     </tr>
                                                 @endforeach
-                                            </tbody>
+                                            </tbody> --}}
                                         </table>
                                     </div>
                                 </div>

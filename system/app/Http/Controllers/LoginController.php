@@ -7,14 +7,14 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-     // Menampilkan form login
-     public function showLoginForm()
-     {
-         return view('auth.login');
-     }
- 
-     // Proses login
-     public function login(Request $request)
+    // Menampilkan form login
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+
+    // Proses login
+    public function login(Request $request)
     {
         $credentials = $request->validate([
             'email' => ['required', 'email'],
@@ -31,10 +31,10 @@ class LoginController extends Controller
             'email' => 'Kredensial yang diberikan tidak cocok dengan catatan kami'
         ]);
     }
- 
-     // Keluar (logout)
-     public function logout(Request $request)
-     {
+
+    // Keluar (logout)
+    public function logout(Request $request)
+    {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();

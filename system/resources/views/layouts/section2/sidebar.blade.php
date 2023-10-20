@@ -11,7 +11,7 @@
                 <li class="has-child ">
                     <a href="#" class="">
                         <span class="nav-icon uil uil-create-dashboard"></span>
-                        <span class="menu-text">Content</span>
+                        <span class="menu-text">Template</span>
                         <span class="toggle-icon"></span>
                     </a>
                     <ul>
@@ -23,6 +23,24 @@
                         </li>
                         <li class>
                             <a href="demo3.html">Footer</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-child ">
+                    <a href="#" class="">
+                        <span class="nav-icon uil uil-create-dashboard"></span>
+                        <span class="menu-text">Conten</span>
+                        <span class="toggle-icon"></span>
+                    </a>
+                    <ul>
+                        <li class="active">
+                            <a href="index.html">Gambar</a>
+                        </li>
+                        <li class>
+                            <a href="demo2.html">Blog</a>
+                        </li>
+                        <li class>
+                            <a href="demo2.html">produk </a>
                         </li>
                     </ul>
                 </li>

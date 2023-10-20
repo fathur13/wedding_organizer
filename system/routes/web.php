@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProduckController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use App\Http\Controllers\LoginController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 Route::get('home', function () {
     return view('index');
@@ -25,6 +26,8 @@ Route::get('admin', function () {
     return view('index2');
 });
 Route::get('account-admin', [AdminController::class, 'index']);
+Route::get('produk', [ProduckController::class, 'index']);
+
 Route::delete('/users/{user}', [AdminController::class, 'destroy'])->name('users.destroy');
 
 // Menampilkan form login
