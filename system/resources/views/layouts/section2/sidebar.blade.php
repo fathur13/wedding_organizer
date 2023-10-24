@@ -16,7 +16,7 @@
                     </a>
                     <ul>
                         <li class="active">
-                            <a href="index.html">Heaader</a>
+                            <a href="{{ url('template-header') }}">Heaader</a>
                         </li>
                         <li class>
                             <a href="demo2.html">Sidebar</a>

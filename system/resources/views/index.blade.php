@@ -4,74 +4,27 @@
     <section class="wpo-hero-slider" id="home">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slide-inner slide-bg-image"
-                        data-background="{{ url('public/assets') }}/images/slider/slide-1.jpg">
-                        <!-- <div class="gradient-overlay"></div> -->
-                        <div class="container-fluid">
-                            <div class="slide-content">
-                                <div data-swiper-parallax="300" class="slide-title">
-                                    <h2>Halo pelanggan! </h2>
-                                </div>
-                                <div data-swiper-parallax="400" class="slide-text">
-                                    <p>Kami hadir untuk menjadikan pernikahan impian Anda menjadi kenyataan. Bersama-sama,
-                                        kita akan menciptakan momen tak terlupakan dalam pernikahan Anda. Selamat datang di
-                                        perjalanan pernikahan Anda yang tak terlupakan.</p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div data-swiper-parallax="500" class="slide-btns">
-                                    <a href="about.html" class="theme-btn">Discover More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end slide-inner -->
-                </div> <!-- end swiper-slide -->
-
-                <div class="swiper-slide">
-                    <div class="slide-inner slide-bg-image"
-                        data-background="{{ url('public/assets') }}/images/slider/slide-2.jpg">
-                        <!-- <div class="gradient-overlay"></div> -->
-                        <div class="container-fluid">
-                            <div class="slide-content">
-                                <div data-swiper-parallax="300" class="slide-title">
-                                    <h2>Halo pelanggan! </h2>
-                                </div>
-                                <div data-swiper-parallax="400" class="slide-text">
-                                    <p>Kami hadir untuk menjadikan pernikahan impian Anda menjadi kenyataan. Bersama-sama,
-                                        kita akan menciptakan momen tak terlupakan dalam pernikahan Anda. Selamat datang di
-                                        perjalanan pernikahan Anda yang tak terlupakan.</p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div data-swiper-parallax="500" class="slide-btns">
-                                    <a href="about.html" class="theme-btn">Discover More</a>
+                @foreach ($headers as $header)
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image"
+                            data-background="{{ asset('system/storage/app/public/' . $header->image_path) }}">
+                            <div class="container-fluid">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>{{ $header->judul }}</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-text">
+                                        <p>{{ $header->teks }}</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div data-swiper-parallax="500" class="slide-btns">
+                                        <a href="about.html" class="theme-btn">Discover More</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div> <!-- end slide-inner -->
-                </div> <!-- end swiper-slide -->
-
-                <div class="swiper-slide">
-                    <div class="slide-inner slide-bg-image"
-                        data-background="{{ url('public/assets') }}/images/slider/slide-3.jpg">
-                        <!-- <div class="gradient-overlay"></div> -->
-                        <div class="container-fluid">
-                            <div class="slide-content">
-                                <div data-swiper-parallax="300" class="slide-title">
-                                    <h2>Halo pelanggan! </h2>
-                                </div>
-                                <div data-swiper-parallax="400" class="slide-text">
-                                    <p>Kami hadir untuk menjadikan pernikahan impian Anda menjadi kenyataan. Bersama-sama,
-                                        kita akan menciptakan momen tak terlupakan dalam pernikahan Anda. Selamat datang di
-                                        perjalanan pernikahan Anda yang tak terlupakan.</p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div data-swiper-parallax="500" class="slide-btns">
-                                    <a href="about.html" class="theme-btn">Discover More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end slide-inner -->
-                </div> <!-- end swiper-slide -->
+                        </div> <!-- end slide-inner -->
+                    </div>
+                @endforeach
             </div>
             <!-- end swiper-wrapper -->
 
@@ -536,7 +489,7 @@
                             </div>
                             <div class="wpo-product-text">
                                 <h3><a href="shop-single.html">Mahkota Pengantin Wanita
-                                </a></h3>
+                                    </a></h3>
                                 <span>$125.00</span>
                             </div>
                         </div>
